@@ -42,7 +42,7 @@ const map=[
 "1000000000000000000000001",
 "1111111111111111111111111"].map(r=>r.split("").map(Number));
 let player,enemies,items,codes,doors,lives=3,ammo=48,sgAmmo=0,weapon="PISTOL",running=false,paused=false,gameover=false,won=false,raf=0,last=0,shot=0,flash=0,msg="",msgT=0,fireHeld=false,locked=false;
-const codeSetup=[{x:3.5,y:3.5,text:"FOX-17",color:"#f0cf72"},{x:19.5,y:5.5,text:"REDLINE",color:"#ed685b"},{x:12.5,y:14.5,text:"NIGHT-03",color:"#8bd8ff"}];
+const codeSetup=[{x:3.5,y:3.5,text:"Normal",color:"#f0cf72"},{x:19.5,y:5.5,text:"Nightmare",color:"#ed685b"},{x:12.5,y:14.5,text:"Hell",color:"#8bd8ff"}];
 function reset(){
  player={x:2.5,y:1.5,a:0,hp:100,cd:0};enemies=[
  {x:6.5,y:3.5,hp:55,type:0,cd:0},{x:16.5,y:3.5,hp:55,type:0,cd:0},{x:21.5,y:9.5,hp:55,type:0,cd:0},
