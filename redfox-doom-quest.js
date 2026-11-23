@@ -5,7 +5,7 @@ const host=document.querySelector(".oPos.nobr")||(script&&script.parentElement)|
 if(!host||host.querySelector(".rf-doom-mount"))return;
 const mount=document.createElement("div");mount.className="rf-doom-mount";host.appendChild(mount);
 const root=mount.attachShadow?mount.attachShadow({mode:"open"}):mount;
-root.innerHTML=\`
+root.innerHTML=`
 <style>
 :host{display:block}*{box-sizing:border-box}.box{max-width:900px;width:100%;margin:10px auto;background:#08090b;color:#ddd;border:1px solid #49423d;font:12px monospace;overflow:hidden}
 .head{height:32px;padding:8px 12px;background:linear-gradient(#343434,#151515);display:flex;justify-content:space-between;letter-spacing:1px}.head b{color:#c33}
@@ -20,7 +20,7 @@ root.innerHTML=\`
 <div class="cover" id="cover"><div class="panel"><div class="logo">DOOM QUEST</div><div class="sub">RED FOX // SECTOR 01</div><div class="desc">ОБЪЕКТ ЗАХВАЧЕН<br>НАЙДИ НАДПИСИ С КОДАМИ<br>УНИЧТОЖЬ МОНСТРОВ И НАЙДИ ВЫХОД</div><button id="start">НАЧАТЬ МИССИЮ</button></div></div>
 <div class="touch"><div class="pad"><button data-k="w">▲</button><button data-k="a">◀</button><button data-k="s">▼</button><button data-k="d">▶</button></div><div class="pad"><button class="fire" data-a="fire">ОГОНЬ</button><button data-a="use">E</button></div></div>
 </div><div class="hud"><div class="stat"><span>HEALTH</span><strong id="hp">100%</strong></div><div class="stat"><span>LIVES</span><strong id="life">3</strong></div><div class="stat"><span>AMMO</span><strong id="ammo">48</strong></div><div class="stat"><span>WEAPON</span><strong id="weapon">PISTOL</strong></div></div>
-<div class="hint">WASD — ДВИЖЕНИЕ · ← → — ПОВОРОТ · МЫШЬ — ОБЗОР · ЛКМ / SPACE — ОГОНЬ · E — ДЕЙСТВИЕ · ESC — ПАУЗА</div></div>\`;
+<div class="hint">WASD — ДВИЖЕНИЕ · ← → — ПОВОРОТ · МЫШЬ — ОБЗОР · ЛКМ / SPACE — ОГОНЬ · E — ДЕЙСТВИЕ · ESC — ПАУЗА</div></div>`;
 const $=id=>root.getElementById(id),canvas=$("c"),ctx=canvas.getContext("2d"),cover=$("cover"),W=640,H=360,z=new Float32Array(W),keys={},touch={};
 const map=[
 "1111111111111111111111111",
